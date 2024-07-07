@@ -32,6 +32,6 @@ class UploadsFolderViewHelper extends AbstractViewHelper
 
         $folder = $fullTypoScriptArray['plugin.']['tx_powermail.']['settings.']['setup.']['misc.']['file.']['folder'] ?? $this->folder;
         
-        return file_exists(GeneralUtility::getFileAbsFileName($this->folder));
+        return file_exists(GeneralUtility::getFileAbsFileName($folder));
     }
 }
