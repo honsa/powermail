@@ -10,7 +10,7 @@
 			</div>
 			<div class="message-body">
 				<p>
-					<f:translate key="BackendCheckUploadsFolderCorrect" />
+					<f:translate key="BackendCheckUploadsFolderCorrect" /> ({vh:be.uploadsFolderPath()})
 				</p>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 			</h4>
 			<div class="message-body">
 				<p>
-					<f:translate key="BackendCheckUploadsFolderFailed" />
+					<f:translate key="BackendCheckUploadsFolderFailed" /> ({vh:be.uploadsFolderPath()})
 				</p>
 				<f:form action="fixUploadFolder">
 					<input type="submit" value="{f:translate(key:'BackendCheckTryToFix', default:'Solve problem')}" />
